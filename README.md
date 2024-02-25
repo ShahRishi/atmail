@@ -7,11 +7,11 @@ _Simple, fast filesharing with Gmail_
 ### Mac
 **_Download the latest release_**
 
-Download the latest release for your system under the releases
+Download the latest [release](https://github.com/ShahRishi/atmail/releases/tag/v0.0.0) for your system under the releases
 
 **_Unzip the release_**
 
-`unzip -r ~/Downloads/atmail-[arm/intel].zip`
+`unzip ~/Downloads/atmail-[arm/intel].zip`
 
 _Note: if you have issues here, delete and redownload the zip_
 
