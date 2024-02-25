@@ -16,6 +16,7 @@ Download the latest [release](https://github.com/ShahRishi/atmail/releases/tag/v
 _Note: if you have issues here, delete and redownload the zip_
 
 **_Move file to executable path_**
+
 `sudo mv ~/Downloads/atmail-[arm/intel]/atmail /usr/local/bin/`
 
 
@@ -50,7 +51,7 @@ To uninstall, simply remove the executable and config directory
 To remove executable:
 `sudo rm /usr/local/bin/atmail`
 
-To remove the config directory (OSX):
+To remove the config directory (Mac):
 `sudo rm -rf ~/Library/Application\ Support/atmail`
 
 To remove the config directory (Ubuntu):
