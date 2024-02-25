@@ -27,15 +27,14 @@ pub fn send(to: String, path: String, config_dir: &PathBuf) {
 
     match dotenv_from_path(config_path) {
         Ok(_) => {},
-        Err(_e) => eprintln!("No config file found, please set using atm config --help")
-
+        Err(_e) => eprintln!("No config file found, please set using atmail config --help")
     }
 
-    let smtp_username = std::env::var("EMAIL").expect("email must be set, see atm config --help").to_string();
-    let smtp_password = std::env::var("TOKEN").expect("token must be set, see this using atm config --help").to_string();
+    let smtp_username = std::env::var("EMAIL").expect("email must be set, see atmail config --help").to_string();
+    let smtp_password = std::env::var("TOKEN").expect("token must be set, see tmail config --help").to_string();
 
     let from: Vec<&str> = smtp_username.split('@').collect();
-    assert!(from.len() == 2, "Issues with config email, which must be in the format [user]@[domain], see atm config --help");
+    assert!(from.len() == 2, "Issues with config email, which must be in the format [user]@[domain], see atmail config --help");
     let to: Vec<&str> = to.split('@').collect();
     assert!(to.len() == 2, "The 'to' email address must be in the format [user]@[domain]");
 
