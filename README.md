@@ -43,7 +43,7 @@ Try sending an email with a file to an email of your choice by:
 
 `atmail send <email> <path>`
 
-Ex: `atmail send me@gamil.com ./images/image.png`
+Ex: `atmail send other@gamil.com ./images/image.png`
 
 ## Uninstall 
 To uninstall, simply remove the executable and config directory 
