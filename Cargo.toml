@@ -7,8 +7,10 @@ edition = "2021"
 
 [dependencies]
 clap = { version = "4.5.1", features = ["derive"] }
+dirs = "5.0.1"
 dotenv = "0.15.0"
 lettre = "0.10.0-rc.3"
 lettre_email = "0.9.4"
 mime = "0.3.16"
 mime_guess = "2.0.4"
+regex = "1.10.3"
