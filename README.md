@@ -4,17 +4,19 @@ _Simple, fast filesharing with Gmail_
 
 ## Installation
 
-### Unix
-** Download the latest release**
+### Mac
+**_Download the latest release_**
+
 Download the latest release for your system under the releases
 
-Unzip the release
-`tar -xvf ~/_downloaded_file.tar.gz`
+**_Unzip the release_**
+
+`unzip -r ~/Downloads/atmail-[arm/intel].zip`
 
 _Note: if you have issues here, delete and redownload the zip_
 
-**Move file to executable path**
-`sudo mv ~/Downloads/dust /usr/local/bin/`
+**_Move file to executable path_**
+`sudo mv ~/Downloads/atmail-[arm/intel]/atmail /usr/local/bin/`
 
 
 ### Windows 
@@ -22,17 +24,19 @@ docs updating soon
 
 
 ## Usage
-**Set up app password**
+_**Set up app password**_
 First set up your gmail app app password, as seen [here](https://support.google.com/accounts/answer/185833?hl=en)
 
-**Configure email login (done only for first use!)**
+_**Configure email login (done only for first use!)**_
+
 Once you have your app password, configure your email login as shown:
 
 `atmail config <email> <token>`
 
 Ex: `atmail config me@gmail.com xxs\ dgsds\ sdfsdf` 
 
-**Send an attachment**
+_**Send an attachment**_
+
 Try sending an email with a file to an email of your choice by:
 
 `atmail send <email> <path>`
