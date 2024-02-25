@@ -16,7 +16,26 @@ struct Cli {
 #[derive(Subcommand)]
 enum Commands {
     /// Send your file
-    Send,
+    Send(SendArgs),
+    Config(ConfigArgs)
+}
+
+#[derive(Args)]
+struct SendArgs {
+    #[arg(name = "to")]
+    to: String,
+
+    #[arg(name = "path")]
+    path: String
+}
+
+#[derive(Args)]
+struct ConfigArgs {
+    #[arg(name = "email")]
+    email: String,
+
+    #[arg(name = "token")]
+    token: String
 }
 
 
@@ -24,8 +43,8 @@ fn main() {
     let cli: Cli = Cli::parse();
 
     match &cli.command {
-        Commands::Send => {
-            send();
+        Commands::Send(send_args) => {
+            send(send_args.to.clone(), send_args.path.clone());
         }
     }
 }
