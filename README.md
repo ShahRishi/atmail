@@ -25,6 +25,7 @@ docs updating soon
 
 ## Usage
 _**Set up app password**_
+
 First set up your gmail app app password, as seen [here](https://support.google.com/accounts/answer/185833?hl=en)
 
 _**Configure email login (done only for first use!)**_
