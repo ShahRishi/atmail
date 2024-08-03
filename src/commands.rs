@@ -42,7 +42,7 @@ pub fn send(to: String, path: String, config_dir: &PathBuf) {
     let body = "This is a message from Atmail!".to_string();
 
     let file_path = Path::new(&path);
-    let filename = String::from("file");
+    let filename = String::from(file_path.file_name().expect("Failed to retrieve file name").to_str().expect("File name is invalid"));
 
     let filebody = fs::read(file_path).unwrap();
     let mime_guess = mime_from_path(file_path).first_or_octet_stream();
